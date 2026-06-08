@@ -249,4 +249,4 @@ The student scene images (`scene1_girl1`, `scene2_girl2`, `scene3_girl3`) are de
 
 ## 📬 Contact
 
-For questions about the dataset, please open an issue or contact: `[EMAIL_ADDRESS]`
+For questions about the dataset, please open an issue or contact: `612k0002c@gapps.ntnu.edu.tw`
