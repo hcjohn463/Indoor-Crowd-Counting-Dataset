@@ -21,7 +21,7 @@ indoor-crowd-counting-dataset/
 │
 ├── student_finetune/                   # Student model fine-tuning data
 │   │
-│   ├── pseudo_labels/                  # CLIP-EBC generated pseudo-labels (full sets)
+│   ├── pseudo_labels/                  # Optimized pseudo-labels (based on CLIP-EBC)
 │   │   ├── scene1_girl1/               # Scene 1 — full pseudo-labeled set
 │   │   │   ├── images/
 │   │   │   └── density_maps/
@@ -58,13 +58,13 @@ indoor-crowd-counting-dataset/
 
 ### Student Model Fine-tuning Data
 
-#### Pseudo-Labels (CLIP-EBC Generated)
+#### Pseudo-Labels (Optimized, CLIP-EBC Based)
 
 | Folder | Scene | Images | Annotation Type | Source |
 |--------|-------|--------|-----------------|--------|
-| `student_finetune/pseudo_labels/scene1_girl1/` | Scene 1 | Full set | Pseudo-label (CLIP-EBC optimized) | Lu et al. (2025) |
-| `student_finetune/pseudo_labels/scene2_girl2/` | Scene 2 | Full set | Pseudo-label (CLIP-EBC optimized) | Lu et al. (2025) |
-| `student_finetune/pseudo_labels/scene3_girl3/` | Scene 3 | Full set | Pseudo-label (CLIP-EBC optimized) | Lu et al. (2025) |
+| `student_finetune/pseudo_labels/scene1_girl1/` | Scene 1 | Full set | Pseudo-label (optimized, CLIP-EBC based) | Lu et al. (2025) |
+| `student_finetune/pseudo_labels/scene2_girl2/` | Scene 2 | Full set | Pseudo-label (optimized, CLIP-EBC based) | Lu et al. (2025) |
+| `student_finetune/pseudo_labels/scene3_girl3/` | Scene 3 | Full set | Pseudo-label (optimized, CLIP-EBC based) | Lu et al. (2025) |
 
 #### Manual Ground Truth (Evaluation)
 
@@ -160,7 +160,7 @@ print(f"Estimated count: {crowd_count:.1f}")
 
 ### Student Pseudo-Labels (`scene1_girl1`, `scene2_girl2`, `scene3_girl3`)
 - **Source**: Frames extracted from the **Classroom Group Engagement (CGE) dataset** — Lu et al., *Scientific Data*, 2025 [[paper]](https://doi.org/10.1038/s41597-025-04987-w)
-- **Annotation method**: CLIP-EBC based pseudo-label generation (optimized by this work)
+- **Annotation method**: Optimized pseudo-label generation algorithm (proposed in this thesis, built upon CLIP-EBC)
 - **Usage**: Fine-tuning subset experiments (N = 50, 100, 200, 400, 700)
 
 ### Student Hand Labels (`*_100` folders)
